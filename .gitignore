@@ -1,0 +1,11 @@
+﻿/.vs
+/Backend/obj/Debug
+/Backend/bin/Debug
+/ImageResizer/obj/Debug
+/ImageResizer/bin
+/ImageResizer
+/ImageResizerClient/obj
+/ImageResizerClient/bin/Debug/netcoreapp2.0
+/ImageResizerClientFramework/obj/Debug
+/ImageResizerClientFramework/bin
+/packages

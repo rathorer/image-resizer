@@ -63,7 +63,7 @@ namespace Backend
             //e.Graphics.DrawImage(myThumbnail, 150, 75);
         }
 
-        public Image GetThumbnail(string imgPath, int height)
+        public Image GetThumbnail(string imgPath, int height, string name = null)
         {
             //var sideMaxSize = 80.0;//just take 80 as default for one side
             Image.GetThumbnailImageAbort myCallback =
@@ -89,15 +89,18 @@ namespace Backend
 
             Image myThumbnail = ResizeImage(myBitmap, thumbnailWidth, thumbnailHeight);
             //myThumbnail.Save(imgPath, ImageFormat.Jpeg);
-            SaveThumbnail(myThumbnail, imgPath, height.ToString());
+            if (string.IsNullOrEmpty(name)) {
+                name = height.ToString();
+            }
+            SaveThumbnail(myThumbnail, imgPath, name);
             myBitmap.Dispose();
             return myThumbnail;
             //e.Graphics.DrawImage(myThumbnail, 150, 75);
         }
 
-        public bool ResizeAndSaveImage(string imgPath, int height)
+        public bool ResizeAndSaveImage(string imgPath, int height, string name = null)
         {
-            var img = GetThumbnail(imgPath, height);
+            var img = GetThumbnail(imgPath, height, name);
             return img.Height == height;
         }
         protected Image ResizeImage(Image image, int newWidth, int newHeight)

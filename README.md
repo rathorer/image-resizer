@@ -1,6 +1,8 @@
 # image-resizer
 # thumbnails creator
-Resizes multiple images in a folder at a time. This can be used to creates thumbnails of desired sizes for bulk images, or can also be used to compress images by resizing them which fits the need. In most cases web application doesn't require very high resolution images or big sizes images, so resizing a image using this tool helps web applications to use compressed images.
+Resizes multiple images in a folder at a time. 
+
+This can be used to creates thumbnails of desired sizes for bulk images, or can also be used to compress images by resizing them which fits the need. In most cases web application doesn't require very high resolution images or big sizes images, so resizing a image using this tool helps web applications to use compressed images.
 If take a photo using your camera or phone, usually it comes with high resolution of greater than 4000x4000px, so when you use it for web or you want to share somehwere, 1300 x 700 or similar size is enough. So simply provide the size you need, and all of your images can be reszied in one go. Simply give the one side of image i.e. just width, so it will calculate height based on image aspect ratio.
 
 Built on .NET framework. 

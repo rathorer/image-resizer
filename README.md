@@ -1,5 +1,5 @@
-# image-resizer
-# thumbnails creator
+# image-resizer/ thumbnails creator
+
 Resizes multiple images in a folder at a time. 
 
 This can be used to creates thumbnails of desired sizes for bulk images, or can also be used to compress images by resizing them which fits the need. In most cases web application doesn't require very high resolution images or big sizes images, so resizing a image using this tool helps web applications to use compressed images.
